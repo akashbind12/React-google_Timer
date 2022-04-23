@@ -19,7 +19,7 @@ export const StopWatch = () => {
    return (
        <div className="stopwatch">
            <div className="stop">Stopwatch</div>
-           <h1>{Math.floor(counter/6000)}m : {Math.floor((counter%6000)/100)}s : {counter%100}</h1>
+           <h1> { Math.floor(counter/6000)}m : {Math.floor((counter%6000)/100)}s : {counter%100}</h1>
            {/* <button onClick={() => {
                startInterval()
            }}>Start</button> */}

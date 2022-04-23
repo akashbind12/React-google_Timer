@@ -13,12 +13,23 @@ export const Timer = () => {
    
 
    
-   const startInterval = () => {
-       counterRef.current =  setInterval(() => {
-           setCounter((p) => p - 1 );
-       },1000)
+//    const startInterval = () => {
+//        counterRef.current =  setInterval(() => {
+//            setCounter((p) => p - 1 );
+//        },1000)
+//     }
+    const startInterval = () => {
+        counterRef.current =  setInterval(() => {
+            setCounter((p) => {
+                 if (p > 0) {
+                     return p - 1;
+                }else {
+                return 0
+                }
+                
+            });
+        },1000)
     }
-    
    
     const handlesecond = (e) => {
         console.log("se",e.target.value)
