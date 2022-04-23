@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  border: 1px solid lightgray;
+  width: 50%;
+  margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid lightgray;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+}
+.timer{
+  border: 1px solid blue;
+  padding: 10px 50px 10px 50px;
+}
+
+.stopwatch{
+  /* border: 1px solid blue; */
+  padding: 10px 50px 10px 50px;
+}
