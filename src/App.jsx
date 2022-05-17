@@ -7,21 +7,21 @@ import { useState } from 'react';
 function App() {
 
   const [show, setShow] = useState(true)
+  const [border, setBorder] = useState(false)
 
   return (
     <div className="App">
-      {/* <Timer/> */}
       <div className='flex'>
-        <div onClick={() => (
-          setShow(!show)
-        )} >TIMER</div>
-        <div onClick={() => (
-          setShow(!show)
-        )} >STOPWATCH</div>
+        <div className={`${border}`} onClick={() => {
+          setShow(false)
+          setBorder(true)
+        }} >TIMER</div>
+        <div className={`${show}`} onClick={() => {
+          setShow(true)
+          setBorder(false)
+        }} >STOPWATCH</div>
       </div>
       {show ?  <StopWatch /> : <Timer/>}
-      {/* <StopWatch />
-      <Timer/> */}
     </div>
   );
 }

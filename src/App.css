@@ -23,3 +23,12 @@
   /* border: 1px solid blue; */
   padding: 10px 50px 10px 50px;
 }
+/* .border{
+  border:1px solid blue ;
+  width: 40%;
+} */
+.true{
+  border:1px solid blue ;
+  width: 40%;
+  padding: 10px;
+}
