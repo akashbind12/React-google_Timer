@@ -43,7 +43,7 @@ export const Timer = () => {
          
            <input className="time" type="Number" placeholder="Enter time in Seconds" onChange={handlesecond} />
            {/* <h1>{Math.floor(counter /6000)}m : {Math.floor((counter%6000)/100)}s : {counter%100}</h1> */}
-           <h1>  {Math.floor(counter/3600)}h  {Math.floor((counter%3600)/60)}m : {counter % 60}s</h1>
+           <h1>  {Math.floor(counter/3600)}h : {Math.floor((counter%3600)/60)}m : {counter % 60}s</h1>
 
            {/* <h1 >{Math.floor(hour)}h : {minute}m : {second}s</h1> */}
            {/* <button onClick={() => {
